@@ -12,7 +12,6 @@ export const SubcategoryMenu = ({
     isOpen,
     position
 }: Props) => {
-    console.log(position)
     if (!isOpen || !category.subcategories || category.subcategories?.length === 0) {
         return null;
     }
