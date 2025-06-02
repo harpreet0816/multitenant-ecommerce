@@ -60,12 +60,14 @@ export const CategoriesSidebar = ({
         setSelectedCategory(null);
     };
 
+    const backgroundColor = selectedCategory?.color || "white";
+
     return (
         <Sheet open={open} onOpenChange={handleOpenChange}>
             <SheetContent
                 side="left"
                 className="p-0 transition-none"
-                style={{ backgroundColor: "white" }}
+                style={{ backgroundColor: backgroundColor }}
             >
                 <SheetHeader>
                     <SheetTitle>Categories</SheetTitle>
